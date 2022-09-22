@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script type="text/javascript" src=" js/jquery-3.6.1.js"> </script>
+  <link rel="shortcut icon" href="img/icon8.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Menús Perzonalizados</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="calculoImc.html">Cálculo IMC</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Recetas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="recetasbajarpeso.html">Bajar de peso</a></li>
+              <li><a class="dropdown-item" href="recetassubirpeso.html">Subir de peso</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="contacto.html" role="button" aria-expanded="false">
+              Contacto
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" th:href="@{/login}">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <main>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner d-flex">
+        <div class="carousel-item active" data-bs-interval="10000" style="background-image: url(img/Carrusel1.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class=" fs-2 text-light ">Alcanza la felicidad</h5>
+            <p class="text-light">Para estar saludable debes ser disciplinado</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000"
+          style="background-image: url(img/Carrusel2.jpg); object-fit: fill !important;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light display-5 ">El ejercicio es necesario más no suficiente</h5>
+            <p class="text-light">Sin una buena alimentación hasta la rutina más intensiva de ejercicio es inútil</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(img/Carrusel3.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light">Toma la decisión!</h5>
+            <p class="text-light">Debes ponerte en control de tu vida y cuidar tu alimentación</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="container text-center mt-5">
+      <div class="row prueba1">
+        <div class="col-12 col-sm-6 col-lg-3 mt-2 flex-wrap">
+          <div class="card border-0">
+
+            <img src="img/frutos secos.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <h5 class="card-title">La mentira de los frutos secos</h5>
+              <p class="card-text">No podrás creer el artículo publicado por la mejor nutricionista de U.S.A.</p>
+              <a href="blog.html#mentira-frutos-secos" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mt-2">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title">Pérdida de Grasas</h5>
+              <p class="card-text">Muchas ideas sobre cómo perder grasa están equivocadas. Aprende ahora las claves para
+                lograrlo con menos esfuerzo.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            <img src="img/perdida-de-grasa.png" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mt-2">
+          <div class="card border-0">
+            <img src="img/infinito.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">El Juego Infinito de la Salud</h5>
+              <p class="card-text">Hay un problema importante con la forma en la que la gente intenta mejorar su salud y
+                su cuerpo.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- insertar footer -->
+
+  <footer class="bg-light text-center mt-3">
+    <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3 mt-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+      <li class="nav-item"><a href="calculoImc.html" class="nav-link px-2 text-muted">Cálculo IMC</a></li>
+      <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
+      <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+    </ul>
+    <p class="text-center text-muted justify-content-center pb-3">Copyright &copy; 2022 Nutrical Demo1, All Rights
+      Reserved</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
